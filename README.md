@@ -8,3 +8,4 @@ This repository tracks my progress of learning Zig
 2. [Running Tests](./tests/tests.md)
 3. [Variables](./variables/variables.zig)
 4. [Arrays](./arrays/arrays.zig)
+5. [If Statements](./if_expressions/if_expressions.zig)
