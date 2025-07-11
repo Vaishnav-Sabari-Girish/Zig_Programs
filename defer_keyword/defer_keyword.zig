@@ -10,3 +10,14 @@ test "defer keyword" {
     }
     try expect(x == 7); //x += 2 is executed here
 }
+
+//When there are multiple defers in a single block, they are executed in reverse order
+test "multiple defers" {
+    var x: f32 = 5;
+    {
+        defer x *= 2; //Executed last
+        defer x /= 2; //Executed second
+        defer x += 3; //Executed first
+    }
+    try expect(x == 8);
+}
