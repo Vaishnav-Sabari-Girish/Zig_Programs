@@ -10,5 +10,7 @@ This repository tracks my progress of learning Zig
 4. [Arrays](./arrays/arrays.zig)
 5. [If Statements](./if_expressions/if_expressions.zig)
 6. [Loops](./loops/loops.md)
+7. [Functions](./functions/function.zig)
+8. [Recursion](./recursion/recursion.zig)
 
 
