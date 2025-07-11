@@ -18,6 +18,8 @@ test "multiple defers" {
         defer x *= 2; //Executed last
         defer x /= 2; //Executed second
         defer x += 3; //Executed first
+
+        try expect(x == 5);
     }
     try expect(x == 8);
 }
