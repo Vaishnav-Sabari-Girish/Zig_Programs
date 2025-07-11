@@ -13,5 +13,6 @@ This repository tracks my progress of learning Zig
 7. [Functions](./functions/function.zig)
 8. [Recursion](./recursion/recursion.zig)
 9. [Defer Keyword](./defer_keyword/defer_keyword.zig)
+10. [Error Handling](./error_handling/error_handling.zig)
 
 
