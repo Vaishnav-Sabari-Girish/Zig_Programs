@@ -38,3 +38,19 @@ test "returning an error" {
         return;
     };
 }
+
+// try x is a shortcut for x catch |err| return err and is commonly used where handling
+// an error is not appropriate.
+
+fn failFn() error{Oops}!i32 {
+    try failingFunction();
+    return 12;
+}
+
+test "try" {
+    const v = failFn() catch |err| {
+        try expect(err == error.Oops);
+        return;
+    };
+    try expect(v == 12);
+}
